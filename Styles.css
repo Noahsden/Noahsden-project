@@ -1,8 +1,8 @@
-.navbar {
+.navbar{
     position: sticky;
     top: 0;
-    background-color: red !important;
-    z-index: 9999999;
+    background-color: rgb(190, 49, 49)!important;
+    z-index: 99999;
 }
 
 .nav-main-links {
@@ -30,7 +30,7 @@ section.hero .carousel-overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.707);
+    background-color: rgba(0, 0, 0, 0.702);
 }
 
 section.hero .carousel-caption {
@@ -47,19 +47,47 @@ section.hero .carousel-caption h5 {
     text-wrap: nowrap;
     font-weight: bolder;
 }
-section.hero .carousel-caption p{
+
+section.hero .carousel-caption p {
     width: 70%;
     font-size: 1.3rem;
     line-height: 2;
 }
 
+@media (max-width: 767px) {
+    .nav-main-links {
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 2rem;
+        height: 100vh;
+    }
+}
+
+section.hero {
+    height: auto;
+}
+
 .carousel-inner {
     height: 100vh !important;
 }
-
 .carousel-inner img {
     height: 100vh;
     object-fit: cover;
+}
+.carousel-caption {
+    height: 80%;
+}
+.carousel-caption h5 {
+    font-size: 1.8rem !important;
+    padding-top: 3rem !important;
+    text-wrap: wrap !important;
+    padding-bottom: 1rem;
+}
+
+.carousel-caption p {
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 2;
 }
 
 section.third {
@@ -78,7 +106,7 @@ section.third .top {
     align-items: center;
 }
 
-section.third .top p {
+section.third .top {
     width: 90%;
     text-align: justify;
     font-size: 1.3rem;
@@ -86,21 +114,21 @@ section.third .top p {
     padding-bottom: 1.3rem;
 }
 
-section .third .top h1 {
+section.third .top h1 {
     font-size: 3.5rem;
     padding-bottom: 1rem;
 }
 
-section .third .top h4 {
+section.third .top h4 {
     color: rgb(132, 97, 6);
     font-size: 2rem;
 }
 
-section .third .card {
+section.third .card {
     width: 100%;
 }
 
-section .third .card-text {
+section.third .card-text {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -108,14 +136,6 @@ section .third .card-text {
     -webkit-box-orient: vertical;
 }
 
-@media (max-width:767px) {
-    .nav-main-links {
-        align-items: flex-start;
-        justify-content: center;
-        padding-top: 2rem;
-        height: 100vh;
-    }
+@media (max-width: 767px) {
+
 }
-
-
-
